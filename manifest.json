@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Code Kit",
+    "version": "1.0",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://chat.openai.com/c/*"], 
+        "js": ["content.js"],
+        "css": ["styles.css"],
+        "run_at": "document_idle"
+      }
+    ],
+    "icons": {
+      "16": "images/kit.png",
+      "48": "images/kit.png",
+      "128": "images/kit.png"
+  }
+}
